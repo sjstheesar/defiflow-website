@@ -28,14 +28,14 @@ document.getElementById("submit").addEventListener("click", function (event) {
     event.preventDefault();
     fname = document.getElementById("fname").value
     femail = document.getElementById("femail").value
-    fphone = document.getElementById("fphone").value
+    twitter = document.getElementById("fphone").value
 
     if (fname != '' && femail != '' && fphone != '') {
         
         subscribers.doc().set({
             name: fname,
             email: femail,
-            phone: fphone
+            twitter: twitter
         })
             .then(() => {
                 document.getElementById("fname").value = ''
