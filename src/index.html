@@ -81,15 +81,18 @@
                     <label for="">
                         Name
                     </label> <br>
-                    <input id="fname" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text" required>
+                    <input id="fname" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text"
+                        required>
                     <label for="">
                         Email
                     </label> <br>
-                    <input id="femail" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="email" required>
+                    <input id="femail" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="email"
+                        required>
                     <label for="">
                         Twitter
                     </label> <br>
-                    <input id="fphone" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text" required>
+                    <input id="fphone" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text"
+                        required>
                     <p id="vmessage" class="text-blue-acc text-left mb-[22px]"></p>
                     <input id="submit" class="btn" type="submit" value="Join for early access">
                 </form>
@@ -108,9 +111,19 @@
                 <p class="text-blue-acc ">You have successfully enlisted yourself to our early access program</p>
                 <img class="w-[87px] mx-auto" src="./images/defiflowlogo.png" alt="" srcset="">
             </div>
-            
+
         </div>
     </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219652216-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-219652216-1');
+    </script>
+
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="./dist/script.js"></script>
