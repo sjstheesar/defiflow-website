@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../dist/colors.css">
+    <title>DefiFlow</title>
+</head>
+
+<body class="bg-dark white" id="body">
+    <div class="max-w-[979px] mx-auto px-4">
+        <!-- navigation -->
+        <div class="flex items-center">
+            <img class="w-[120px]" src="../images/defiflowlogo.png" alt="" srcset="">
+            <div class="flex ml-auto">
+                <a href="http://">
+                    <img class="mr-[12px]" src="../images/twitter-brands.svg" alt="" srcset="">
+                </a>
+                <a href="http://">
+                    <img src="../images/discord-brands.svg" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+        <div class="max-w-[459px] mx-auto text-center mt-[179px]">
+            <h1>
+                Invest in DeFi with Confidence
+            </h1>
+            <p class="text-blue-acc mt-[8px]">
+                Decentralized Finance (DeFi) is the future. So is many rekt and slow rugpull projects. Use DeFi Flow to
+                identify the flow of money and choose your investments with confidence
+            </p>
+            <button id="focusform" class="mt-[51px]">Request Early Access</button>
+        </div>
+        <div class="max-w-[883px] mt-[97px] mx-auto">
+            <img src="../images/productphoto.svg" alt="" srcset="">
+            <div class="relative absolute mt-[-450px]">
+                <div class="background h-[193px]"></div>
+                <div class="bg-dark h-[258px] text-center">
+                    <h2 class="pt-[85px]">
+                        Why DeFi Flow?
+                    </h2>
+                    <p class="text-blue-acc mt-[8px] max-w-[459px] mx-auto pb-[85px]">
+                        Identify the flow of capitals from protocols to protocols and in and out of chains.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[979px] mx-auto px-4">
+        <div class="grid grid-cols-2 max-w-[504px] mx-auto">
+            <div class="max-w-[122px] mb-[99px]">
+                <img src="../images/analytics.svg" alt="" srcset="">
+                <p class="text-left text-blue-acc text-[18px] mt-[17px] leading-5">DeFi Analytics for Everyone</p>
+            </div>
+            <div class="max-w-[122px] mb-[99px] ml-auto">
+                <img src="../images/topprojects.svg" alt="" srcset="">
+                <p class="text-left text-blue-acc text-[18px] mt-[17px] leading-5">Find Top DeFi projects Easily</p>
+            </div>
+            <div class="max-w-[122px] mb-[99px]">
+                <img src="../images/metrics.svg" alt="" srcset="">
+                <p class="text-left text-blue-acc text-[18px] mt-[17px] leading-5">Trusted Metrics for Tokens</p>
+            </div>
+            <div class="max-w-[122px] mb-[99px] ml-auto">
+                <img src="../images/10 x.svg" alt="" srcset="">
+                <p class="text-left text-blue-acc text-[18px] mt-[17px] leading-5">Find your Next 10X</p>
+            </div>
+            <div class="max-w-[122px] mb-[99px]">
+                <img src="../images/whale.svg" alt="" srcset="">
+                <p class="text-left text-blue-acc text-[18px] mt-[17px] leading-5"> Track Whales</p>
+            </div>
+        </div>
+    </div>
+    <!-- form section -->
+    <div id="optin" class="max-w-[979px] mx-auto px-4 my-[146px]">
+        <div class="grid grid-cols-2">
+            <div class="text-blue-acc mx-2 removeol">
+                <form action="" method="post">
+                    <label for="">
+                        Name
+                    </label> <br>
+                    <input id="fname" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text" required>
+                    <label for="">
+                        Email
+                    </label> <br>
+                    <input id="femail" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="email" required>
+                    <label for="">
+                        Phone Number
+                    </label> <br>
+                    <input id="fphone" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text" required>
+                    <input id="submit" class="btn" type="submit" value="Join for early access">
+                </form>
+            </div>
+            <div class="w-[258px] text-right inline-block my-auto ml-auto">
+                <h2 class="h2">Join Our Early Access Program</h2>
+                <p class="text-blue-acc text-right pt-[8px] ">Use the pro analytics tools without the coding
+                    knowledge</p>
+            </div>
+        </div>
+    </div>
+    <div id="confirm" class="h-screen w-screen fixed top-0 flex h-full w-full hidden">
+        <div class="max-w-[617px] mx-auto bg-dark-acc rounded-md max-h-[388px] w-full h-full flex self-center">
+            <div class="max-w-[198px] mx-auto text-center self-center">
+                <img class="mx-auto mb-[45px]" src="../images/tick.svg" alt="">
+                <p class="text-blue-acc ">You have successfully enlisted yourself to our early access program</p>
+                <img class="w-[87px] mx-auto" src="../images/defiflowlogo.png" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="../dist/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.white {
+    color: #fff;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: 0.015em
+}
+.h2{
+    line-height: 42px;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+button,.btn{
+    padding-right: 27px;
+    padding-left: 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: #F54F29;
+    font-size: 15px;
+    border-radius: 14px;
+    color: white;
+    cursor: pointer;
+}
+.background{
+    background: linear-gradient(180deg, rgba(10, 21, 25, 0) 0%, #0A1519 100%);
+}
+.removeol > form > input{
+    outline: none;
+}
+#confirm{
+    background-color: rgba(26, 29, 32, 0.808);
+}
