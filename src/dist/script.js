@@ -21,7 +21,7 @@ document.getElementById("confirm").addEventListener("click", () => {
     document.getElementById("confirm").classList.add("hidden")
 })
 document.getElementById("focusform").addEventListener("click", () => {
-    document.getElementById("optin").scrollIntoView();
+    document.getElementById("optin").scrollIntoView({behavior: "smooth"});
 })
 
 document.getElementById("submit").addEventListener("click", function (event) {
@@ -29,20 +29,26 @@ document.getElementById("submit").addEventListener("click", function (event) {
     fname = document.getElementById("fname").value
     femail = document.getElementById("femail").value
     fphone = document.getElementById("fphone").value
-    subscribers.doc().set({
-        name: fname,
-        email: femail,
-        phone: fphone
-    })
-        .then(() => {
-            document.getElementById("fname").value = ''
-            document.getElementById("femail").value = ''
-            document.getElementById("fphone").value = ''
-            var element = document.getElementById("confirm");
-            element.classList.remove("hidden");
 
+    if (fname != '' && femail != '' && fphone != '') {
+        
+        subscribers.doc().set({
+            name: fname,
+            email: femail,
+            phone: fphone
         })
-        .catch((error) => {
-            console.error("Error adding document: ", error);
-        });
+            .then(() => {
+                document.getElementById("fname").value = ''
+                document.getElementById("femail").value = ''
+                document.getElementById("fphone").value = ''
+                var element = document.getElementById("confirm");
+                element.classList.remove("hidden");
+
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
+    } else {
+        var element1 = document.getElementById("vmessage").innerHTML = "Ohh no!! you left it blank. Please try again";
+    }
 });

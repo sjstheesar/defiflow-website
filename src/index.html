@@ -16,10 +16,10 @@
         <div class="flex items-center">
             <img class="w-[120px]" src="./images/defiflowlogo.png" alt="" srcset="">
             <div class="flex ml-auto">
-                <a href="http://">
+                <a href="https://twitter.com/defiflow_" target="_blank">
                     <img class="mr-[12px]" src="./images/twitter-brands.svg" alt="" srcset="">
                 </a>
-                <a href="http://">
+                <a href="https://discord.com/invite/EfxT8TPjHU" target="_blank">
                     <img src="./images/discord-brands.svg" alt="" srcset="">
                 </a>
             </div>
@@ -36,8 +36,8 @@
         </div>
         <div class="max-w-[883px] mt-[97px] mx-auto">
             <img src="./images/productphoto.png" alt="" srcset="">
-            <div class="relative absolute mt-[-450px]">
-                <div class="background h-[193px]"></div>
+            <div class="relative absolute mt-[0px] sm:mt-[-450px]">
+                <div class="background h-0 sm:h-[193px]"></div>
                 <div class="bg-dark h-[258px] text-center">
                     <h2 class="pt-[85px]">
                         Why DeFi Flow?
@@ -75,8 +75,8 @@
     </div>
     <!-- form section -->
     <div id="optin" class="max-w-[979px] mx-auto px-4 my-[146px]">
-        <div class="grid grid-cols-2">
-            <div class="text-blue-acc mx-2 removeol">
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+            <div class="text-blue-acc mx-2 removeol order-last sm:order-first">
                 <form action="" method="post">
                     <label for="">
                         Name
@@ -90,10 +90,11 @@
                         Phone Number
                     </label> <br>
                     <input id="fphone" class="bg-dark-acc mt-[8px] mb-[22px] rounded-md px-2 py-1 w-full" type="text" required>
+                    <p id="vmessage" class="text-blue-acc text-left mb-[22px]"></p>
                     <input id="submit" class="btn" type="submit" value="Join for early access">
                 </form>
             </div>
-            <div class="w-[258px] text-right inline-block my-auto ml-auto">
+            <div class="w-[258px] text-right mt-150px mb-[50px] sm:order-last sm:mb-[0px] ml-auto">
                 <h2 class="h2">Join Our Early Access Program</h2>
                 <p class="text-blue-acc text-right pt-[8px] ">Use the pro analytics tools without the coding
                     knowledge</p>

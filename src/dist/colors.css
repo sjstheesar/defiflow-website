@@ -52,3 +52,10 @@ button,.btn{
 #confirm{
     background-color: rgba(26, 29, 32, 0.808);
 }
+.mt-150px{
+    margin-top: -150px;
+}
+
+#vmessage{
+    color: #F54F29;
+}
